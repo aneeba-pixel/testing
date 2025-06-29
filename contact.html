@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact WC Perway - Get a Quote</title>
+    <meta name="description" content="Contact WC Perway for your rail, civil, solar, or scaffolding project in South Africa. Request a quote today for services in the Western Cape and beyond.">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">WC Perway</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="testimonials.html">Testimonials</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="container mt-5 section-padding">
+        <h1 class="section-title text-center mb-5">Contact Us</h1>
+        <p class="lead text-center mb-5">We're ready to discuss your project needs. Reach out today for a consultation or quote.</p>
+
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-lg-7 mb-5 mb-lg-0">
+                <h3 class="text-dark-blue mb-4">Send Us a Message</h3>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="contactName">Your Name</label>
+                            <input type="text" class="form-control" id="contactName" name="name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="contactEmail">Your Email</label>
+                            <input type="email" class="form-control" id="contactEmail" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Subject (Optional)</label>
+                        <input type="text" class="form-control" id="contactSubject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea class="form-control" id="contactMessage" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-lg-5">
+                <h3 class="text-dark-blue mb-4">Our Details</h3>
+                <div class="contact-info">
+                    <p><strong>Phone:</strong> <a href="tel:+27791100936">+27 79 110 0936</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@wcperway.co.za">info@wcperway.co.za</a> (Example)</p>
+                    <p><strong>Address:</strong><br>22 Bogart St<br>Vanderbijlpark, SE 7<br>South Africa</p>
+                </div>
+
+                <h4 class="text-dark-blue mt-4 mb-3">Find Us</h4>
+                <!-- Google Map Placeholder -->
+                <div class="map-placeholder">
+                    <p>Google Map will be embedded here.<br>
+                    Requires Google Maps API key for live map.<br>
+                    <a href="https://www.google.com/maps/search/?api=1&query=22+Bogart+St,+Vanderbijlpark,+South+Africa" target="_blank" rel="noopener noreferrer">View on Google Maps (External Link)</a>
+                    </p>
+                    <!-- Example iframe for when API key is available:
+                    <iframe src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=22+Bogart+St,Vanderbijlpark+SE+7,South+Africa"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark-blue text-white pt-4 pb-2 mt-5">
+        <div class="container text-center">
+            <p>&copy; <span id="currentYear"></span> WC Perway. All Rights Reserved.</p>
+            <p>Building South Africa's Future, One Project at a Time.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

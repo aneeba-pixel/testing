@@ -1,0 +1,221 @@
+/* WC Perway Custom Styles */
+
+/* Core Palette */
+:root {
+    --wc-dark-blue: #0A2342; /* Primary Dark Blue */
+    --wc-medium-blue: #2C5D8E; /* Secondary Blue */
+    --wc-light-gray: #F8F9FA; /* Light background */
+    --wc-dark-gray: #343A40; /* Dark text/accents */
+    --wc-orange-accent: #FF8C00; /* Primary Accent - Dark Orange */
+    --wc-green-accent: #28A745;  /* Secondary Accent - Green */
+    --wc-text-light: #FFFFFF;
+    --wc-text-dark: #212529;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Clean, professional font */
+    color: var(--wc-text-dark);
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+.bg-dark-blue {
+    background-color: var(--wc-dark-blue) !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: var(--wc-text-light) !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+    color: var(--wc-orange-accent) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--wc-orange-accent);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 140, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* Footer */
+footer.bg-dark-blue {
+    background-color: var(--wc-dark-blue) !important;
+    color: var(--wc-text-light);
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--wc-orange-accent);
+    border-color: var(--wc-orange-accent);
+    color: var(--wc-text-light);
+    padding: 10px 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #E07B00; /* Darker orange on hover */
+    border-color: #E07B00;
+    color: var(--wc-text-light);
+}
+
+.btn-secondary {
+    background-color: var(--wc-medium-blue);
+    border-color: var(--wc-medium-blue);
+    color: var(--wc-text-light);
+    padding: 10px 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #224A70; /* Darker medium blue on hover */
+    border-color: #224A70;
+    color: var(--wc-text-light);
+}
+
+
+/* Jumbotron / Hero Section */
+.jumbotron-fluid.hero-section {
+    background-color: var(--wc-medium-blue);
+    color: var(--wc-text-light);
+    padding: 4rem 2rem;
+    margin-bottom: 0; /* Remove default margin if it's the first element */
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.hero-section .lead {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Section Styling */
+.section-padding {
+    padding: 60px 0;
+}
+
+.section-bg-light {
+    background-color: var(--wc-light-gray);
+}
+
+.section-title {
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--wc-dark-blue);
+    text-align: center;
+}
+
+/* Service Cards / Project Cards */
+.card.service-card, .card.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.card.service-card:hover, .card.project-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    color: var(--wc-dark-blue);
+    font-weight: bold;
+}
+
+/* Contact Form */
+.contact-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--wc-orange-accent);
+    box-shadow: 0 0 0 0.2rem rgba(255,140,0,.25);
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.contact-info strong {
+    color: var(--wc-dark-blue);
+}
+
+/* Map Placeholder */
+.map-placeholder {
+    height: 400px;
+    background-color: var(--wc-light-gray);
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--wc-dark-gray);
+}
+
+/* Testimonials */
+.testimonial-card {
+    background-color: var(--wc-light-gray);
+    padding: 20px;
+    border-left: 5px solid var(--wc-orange-accent);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.testimonial-card p.client-name {
+    font-weight: bold;
+    color: var(--wc-dark-blue);
+    margin-top: 10px;
+}
+
+/* Utility Classes */
+.text-orange {
+    color: var(--wc-orange-accent);
+}
+.text-green {
+    color: var(--wc-green-accent);
+}
+.text-dark-blue {
+    color: var(--wc-dark-blue);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+    .hero-section .lead {
+        font-size: 1.1rem;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .nav-link {
+        padding: 10px 0;
+    }
+}
